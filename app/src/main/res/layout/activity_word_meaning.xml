@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    //tools:context=".searchword.SearchingActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background = "@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/editWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="55dp"
+                android:background="@color/white"
+                android:fontFamily="sans-serif-light"
+                android:textAlignment="viewStart"
+                android:textColor="#0B0A0A"
+                android:textColorHighlight="#2196F3"
+                android:textIsSelectable="false"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/btn_note"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:drawable/ic_menu_edit"
+                android:onClick="btn_add_note_onclick"
+                android:src="@android:drawable/ic_menu_edit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/editPronunciation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="55dp"
+                android:background="@color/white"
+                android:textColor="@color/purple_700"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <ToggleButton
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/btn_speak"
+                android:id="@+id/btn_favorite"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="10dp"
+                android:background="@color/yellow"
+                android:textOff="Save?"
+                android:checked="false"
+                android:textOn="Saved!"/>
+
+            <ImageButton
+                android:id="@+id/btn_speak"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:background="@android:drawable/ic_media_play"
+                android:src="@android:drawable/ic_media_play"
+                android:onClick="btn_speak_word"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:gravity="bottom"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/MyTabText" />
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/tab_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/border"
+        android:id="@+id/editnotebox"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="sans-serif-medium"
+            android:text="Your Note"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/edt_note"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="top"
+            app:queryHint="Type your note here" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="OK"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"
+            android:onClick="btn_ok_note_onclick"/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+</LinearLayout>

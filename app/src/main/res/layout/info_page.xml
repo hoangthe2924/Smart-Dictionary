@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity"
+    android:background="@drawable/background_05">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="SMART DICTIONARY"
+                android:fontFamily="cursive"
+                android:textSize="35sp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/appText"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_below="@id/appText"
+                android:text="DESIGN BY CEINET TEAM"
+                android:layout_marginTop="6dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:src="@drawable/quangtien"
+                android:id="@+id/quangtienimage"
+                android:layout_width="82dp"
+                android:layout_height="82dp"/>
+            <TextView
+                android:layout_toRightOf="@+id/quangtienimage"
+                android:layout_marginLeft="10dp"
+                android:text="18120593-TRAN QUANG TIEN"
+                android:textSize="20sp"
+                android:id="@+id/quangtien"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_toRightOf="@+id/quangtienimage"
+                android:layout_marginLeft="10dp"
+                android:text="Honored Program Student of FIT-HCMUS"
+                android:layout_below="@id/quangtien"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/white"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:src="@drawable/hoangthe"
+                android:layout_width="82dp"
+                android:id="@+id/hoangtheimage"
+                android:layout_height="82dp"/>
+            <TextView
+                android:layout_toRightOf="@+id/hoangtheimage"
+                android:layout_marginLeft="10dp"
+                android:text="18120569-DO HOANG THE"
+                android:textSize="20sp"
+                android:id="@+id/hoangthe"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_toRightOf="@+id/hoangtheimage"
+                android:layout_marginLeft="10dp"
+                android:text="Honored Program Student of FIT-HCMUS"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/hoangthe"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/white"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:src="@drawable/huycuong"
+                android:layout_width="82dp"
+                android:id="@+id/huycuongimage"
+                android:layout_height="82dp"/>
+            <TextView
+                android:layout_toRightOf="@+id/huycuongimage"
+                android:layout_marginLeft="10dp"
+                android:text="18120160-HUA HUY CUONG"
+                android:textSize="20sp"
+                android:id="@+id/huycuong"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="Honored Program Student of FIT-HCMUS"
+                android:layout_below="@id/huycuong"
+                android:layout_toRightOf="@+id/huycuongimage"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/white"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
